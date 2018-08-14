@@ -1,0 +1,77 @@
+.section--works{
+    text-align: center;
+}
+.section--works .button--follow{
+    margin: 40px 0 40px 0;
+}
+.section--works .carousel .slider-wrapper .slide .works__item img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.section--works .carousel .slider-wrapper .slide .description{
+    opacity: 0;
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -ms-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
+}
+.section--works .carousel .slider-wrapper .slide.selected .description{
+    opacity: 1;
+}
+.section--works .carousel .slider-wrapper .slide img{
+    -webkit-transition: transform .2s;
+    -moz-transition: transform .2s;
+    -ms-transition: transform .2s;
+    -o-transition: transform .2s;
+    transition: transform .7s;
+}
+.section--works .carousel .slider-wrapper .slide.selected img{
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.section--works .carousel .control-arrow{
+     width: 30px;
+     height: 30px;
+     opacity: 0.8;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+ }
+.section--works .carousel .control-arrow:before{
+    background-image: url(../assets/images/svg/arrow-right.svg);
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.section--works .carousel .control-arrow.control-prev{
+    left: 10px;
+}
+.section--works .carousel .control-arrow.control-next{
+    right: 10px;
+}
+.section--works .carousel .control-arrow.control-prev:before{
+    background-image: url(../assets/images/svg/arrow-left.svg);
+}
+.section--works .carousel .control-arrow:hover{
+    opacity: 1;
+    background: #000000;
+}

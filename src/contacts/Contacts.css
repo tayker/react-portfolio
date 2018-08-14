@@ -1,0 +1,16 @@
+.section--contacts .contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    background-color: #000000;
+    border-radius: 6px;
+    max-width: 400px;
+    margin: 40px auto 0 auto;
+}
+.section--contacts .contacts .title{
+    align-self: center;
+}
+.section--contacts .contacts a{
+    margin-top: 20px;
+}
