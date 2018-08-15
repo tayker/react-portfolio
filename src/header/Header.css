@@ -1,0 +1,56 @@
+header nav{
+    position: absolute;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding-left: 10px;
+    max-height: 400px;
+    margin-top: 80px;
+    z-index: 1;
+}
+header nav:before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    left: 0;
+    background-color: rgba(255,255,255,0.2);
+}
+header nav a{
+    color: rgba(255,255,255,0.4);
+    position: relative;
+    font-weight: bold;
+    -webkit-transition: color .2s;
+    -moz-transition: color .2s;
+    -ms-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s;
+}
+header nav a:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    -ms-transition: background-color .2s;
+    -o-transition: background-color .2s;
+    transition: background-color .2s;
+}
+header nav a.active{
+    color: rgba(255,255,255,1);
+}
+header nav a.active:before{
+    background-color: #0f33ff;
+}

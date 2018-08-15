@@ -9,6 +9,9 @@ body {
     padding: 0 15px;
     margin: auto;
 }
+.main-wrapper{
+    padding-left: 60px;
+}
 .button{
     cursor: pointer;
 }
@@ -62,4 +65,16 @@ h2{
     color: rgb(255, 255, 255);
     line-height: 2.4;
     font-weight: 900;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.switch-wrapper {
+    position: relative;
+}
+
+.switch-wrapper > div {
+    position: absolute;
+    width: 100%;
 }

@@ -8,14 +8,23 @@ import './Works.css';
 export default class Works extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {width: 0, height: 0};
+        this.updateWindowDimensions = () => {
+            this.setState({ width: window.innerWidth, height: window.innerHeight });
+        }
+    }
+    componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
     }
     render() {
         return (
             <section className='section section--works'>
                 <div className="container">
-                    <button className="button button--follow">
-                        Action
-                    </button>
                     <h2>
                         Selected work
                     </h2>
@@ -23,7 +32,8 @@ export default class Works extends React.Component {
                               showThumbs={false}
                               showStatus={false}
                               showIndicators={false}
-                              infiniteLoop={true}>
+                              infiniteLoop={true}
+                              axis={this.state.width < 800 ? 'vertical' : 'horizontal'}>
                         <div className="works__item">
                             <img src={work1} alt=""/>
                             <div className="title">

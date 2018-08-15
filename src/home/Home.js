@@ -11,29 +11,30 @@ export default class Home extends React.Component {
                 <div className="container">
                     <Carousel className="interactive"
                               showArrows={true}
-                              showIndicators={false}>
+                              showIndicators={false}
+                              showStatus={false}>
                         <div className="interactive__item">
-                            <h2>
+                            <h1>
                                 Your next interactive experience
-                            </h2>
+                            </h1>
                             <img className='img' src={img} alt=""/>
                             <button className="button button--follow">
                                 Action
                             </button>
                         </div>
                         <div className="interactive__item">
-                            <h2>
+                            <h1>
                                 Your next interactive experience
-                            </h2>
+                            </h1>
                             <img className='img' src={ufoImg} alt=""/>
                             <button className="button button--follow">
                                 Action
                             </button>
                         </div>
                         <div className="interactive__item">
-                            <h2>
+                            <h1>
                                 Your next interactive experience
-                            </h2>
+                            </h1>
                             <img className='img' src={img} alt=""/>
                             <button className="button button--follow">
                                 Action
